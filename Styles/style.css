@@ -1,0 +1,455 @@
+/*Created By: John Joseph Pietrangelo III        Go Devils*/
+
+/* For phones (portrait) unless another @media rule below is fired */
+/*@media only screen and (max-width: 524.9px)
+{
+    .col-sm-00
+    {
+        display: none;
+    }
+
+    .col-sm-12
+    {
+        width:  100%;
+    }
+    
+    *
+    {
+        box-sizing: border-box;
+    }
+
+    body
+    {
+        background-color: #fb69cd;
+        text-align: center;
+    }
+
+    button
+    {
+        background: #8c1d40;
+        color: #ffc627;
+        font-family: 'Tangerine', cursive;
+        font-size:1rem;
+        font-weight: bolder;
+        height: 2rem;
+        padding-bottom: 20px;
+        padding-top: 8px;
+        text-align: left;
+        width: 3.2rem;
+    }
+
+    .comments-input
+    {
+        margin-top: .7rem;
+    }
+
+    .comments-input p:nth-child(even)
+    {
+        background-color: #ffc640;
+        color: #8c1d27;
+        font-size: 1.125rem;
+        margin-bottom: .25rem;
+        margin-top: .25rem;
+    }
+
+    .comments-input p:nth-child(odd)
+    {
+        background-color: #8c1d40;
+        color: #ffc627;
+        font-size: 1.125rem;
+        text-shadow: 1px 1px black;
+    }
+*/
+ /*   footer
+    {
+        background-color: #ffc627;
+        border-bottom: #8c1d40 5px solid;
+        border-top: #8c1d40 5px solid;
+        color:#8c1d40;
+        font-family: 'Marck Script', cursive;
+        font-size: 1.5rem;
+        font-wieght: bold;
+        height: 5rem;
+        height: auto;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    h1
+    {
+        color: #8c1d40;
+        font-family: 'Marck Script', cursive;
+        font-size: 3.5rem;
+        padding-top: .25rem;
+        text-shadow: 2px 2px #ffc627;
+        width: 100%;
+    }
+
+    h3
+    {
+        color: #8c1d40;
+        font-family: 'Tangerine', cursive;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        text-shadow: 2px 2px #ffc627; 
+        width: 100%;
+    }
+
+    header
+    {
+        border-bottom: 2px solid black;
+        height: 6.2rem;
+        text-align: center;
+    }
+
+    .header1
+    {
+        height: 3.6rem;
+        width: 100% 
+    }
+
+    .header2
+    {
+        height: 2.5rem;
+        width: 100% 
+    }
+
+    .image
+    {
+        height: 50px;
+        width: 200px;
+    }
+
+    input
+    {
+        color: #8c1d40;
+        font-size: 1.75rem;
+        font-weight: bolder;
+        height: 2rem;
+        padding-bottom: 6px;
+        text-align: center;
+        width: 9.8rem;
+    }
+    
+    main
+    {
+        height: 18rem;
+        padding-top: 1rem;
+    }
+
+    .main1
+    { 
+        padding-top: 1rem;  
+    }
+
+    .main2
+    {
+        padding-top: 2rem; 
+    }
+
+    .row::after
+    {
+        clear:              both;
+        content:            "";
+        display:            block;
+    }
+
+    .userInput
+    {
+        color: #8c1d27;
+        font-family: 'Tangerine', cursive;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-shadow: 1px 1px #ffc627;
+    }
+}
+*/
+/*For medium screens (e.g. landscape phones and portrait tablets) */
+/*@media only screen and (min-width: 525px)
+{
+    .col-md-00  {display: none;}
+    .col-md-01  {width: 8.33%;}
+    .col-md-02  {width: 16.66%;}
+    .col-md-03  {width: 25.00%;}
+    .col-md-04  {width: 33.33%;}
+    .col-md-05  {width: 41.66%;}
+    .col-md-06  {width: 50.00%;}
+    .col-md-07  {width: 58.33%;}
+    .col-md-08  {width: 66.66%;}
+    .col-md-09  {width: 75.00%;}
+    .col-md-10  {width: 83.33%;}
+    .col-md-11  {width: 91.66%;}
+    .col-md-12  {width: 100.00%;}
+
+    *
+    {
+        box-sizing: border-box;
+    }
+
+    body
+    {
+        background-color: #00af40;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    button
+    {
+        background: #8c1d40;
+        color: #ffc627;
+        font-family: 'Tangerine', cursive;
+        font-size:1rem;
+        font-weight: bolder;
+        height: 2rem;
+        padding-bottom: 20px;
+        padding-top: 8px;
+        text-align: left;
+        width: 3.2rem;
+    }
+
+    .comments-input
+    {
+        margin-top: .7rem;
+    }
+
+    .comments-input p:nth-child(even)
+    {
+        background-color: #8c1d40;
+        color: #ffc627;
+        font-size: 1.5rem;
+        margin-bottom: .25rem;
+        margin-top: .25rem;
+        text-shadow: 1px 1px black;
+    }
+
+    .comments-input p:nth-child(odd)
+    {
+        background-color: #ffc627;
+        color: #8c1d40;
+        font-size: 1.5rem;
+    }
+
+    footer
+    {
+        background-color: #8c1d40;
+        border-top: #ffc627 10px solid;
+        border-bottom: #ffc627 10px solid;
+        color:#ffc627;
+        font-family: 'Marck Script', cursive;
+        font-size: 1.75rem;
+        font-wieght: bold;
+        height: auto;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+       
+    }
+
+    header
+    {
+        border-bottom: 2px solid black;
+        height: 6.2rem;
+       
+    }
+
+    .header1
+    {
+        height: 3.6rem;
+        width: 100% 
+    }
+
+    .header2
+    {
+        height: 2.5rem;
+        width: 100% 
+    }
+
+    h1
+    {
+        color: #ffc627;
+        font-family: 'Marck Script', cursive;
+        font-size: 3rem;
+        padding-top: .25rem;
+        text-shadow: 2px 2px #8c1d40; 
+        width: 100%;
+    }
+
+    h3
+    {
+        color: #8c1d40;
+        font-family: 'Tangerine', cursive;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        text-shadow: 1px 1px #ffc627; 
+        width: 100%;
+    }
+
+    .image
+    {
+        height: 100px;
+        width: 370px;
+    }
+
+    input
+    {
+        color: #8c1d40;
+        font-size: 1.75rem;
+        font-weight: bolder;
+        height: 2rem;
+        padding-bottom: 6px;
+        text-align: center;
+        width: 8.8rem;
+    }
+
+    main
+    {
+        height: 18rem;
+        padding-top: 1rem;
+    }
+
+    .main1
+    {
+        float:right;
+        padding-top: 1rem;  
+    }
+
+    .main2
+    {
+        float: left;
+        padding-top: 2rem; 
+    }
+
+    .userInput
+    {
+        color: #ffc627;
+        font-family: 'Tangerine', cursive;
+        font-size: 1.75rem;
+        font-weight: bolder;
+        text-shadow: 2px 2px #8c1d40; 
+    }
+*/
+/* For large screens or landscape tablets*/
+@media only screen and (min-width: 777px)
+{
+    .col-sm-00  {display: initial;}
+    .col-md-00  {display: initial;}
+    .col-lg-01  {width: 8.33%;}
+    .col-lg-02  {width: 16.66%;}
+    .col-lg-03  {width: 25.00%;}
+    .col-lg-04  {width: 33.33%;}
+    .col-lg-05  {width: 41.66%;}
+    .col-lg-06  {width: 50.00%;}
+    .col-lg-07  {width: 58.33%;}
+    .col-lg-08  {width: 66.66%;}
+    .col-lg-09  {width: 75.00%;}
+    .col-lg-10 	{width: 83.33%;}
+    .col-lg-11 	{width: 91.66%;}
+    .col-lg-12 	{width: 100.00%;}
+
+    *
+    {
+        box-sizing: border-box;
+    }
+
+    [class*="col-"]
+{
+    float:              left;
+}
+    
+     [class*="col-lg-"]
+    {
+        border: 4px solid gray;
+    }
+
+    body
+    {
+        background-color: #8f8f8f;
+    }
+
+    /*.contact
+    {
+
+    }*/
+
+    footer
+    {
+        background-color: #ffc627;
+        color:#8c1d40;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    header
+    {
+        border-bottom: 2px solid black;
+        height: 5rem;
+    }
+    html
+    {
+        padding-left: 3em;
+        padding-right: 3em; 
+    }
+
+    .header1
+    {
+
+        height: 4rem; 
+    }
+
+    .header2
+    {
+        
+        height: 4rem;
+        padding-top: 2rem;
+    }
+
+    h1
+    {
+        color: #ffc627;
+        font-family: 'Marck Script', cursive;
+        font-size: 4rem;
+        padding-top: .5rem;
+        text-shadow: 2px 2px #8c1d40; 
+    }
+    h4
+    {
+        color: #8c1d40;
+        font-family: 'Marck Script', cursive;
+        font-size: 1.5rem;
+        padding-top: .5rem;
+        text-shadow: 2px 2px #ffc627;
+
+    }
+
+    main
+    {
+        height: 20rem;
+        padding-top: 1rem;
+    }
+    
+    .row::after
+    {
+        content:            "";
+        clear:              both;
+        display:            block;
+    }
+    /*.siteMap
+    {
+        float: left;
+    }*/
+}
+
+
+
+
+
+
+
+
+/*[class*="col-"]
+{
+    float: 				left;
+    border-radius: 		10px;
+    padding: 			2%;
+}*/
